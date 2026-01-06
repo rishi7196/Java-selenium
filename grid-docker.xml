@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="GRID_Suite" parallel="tests" thread-count="5">
+	<test name="Linux chrome">
+		<parameter name="os" value="Linux"></parameter>
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="seleniumgrid.TestAutomationGrid">
+				<methods>
+					<include name="getOnChromeTest" />
+					<include name="flipkart1" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="linix firefox">
+		<parameter name="os" value="Linux"></parameter>
+		<parameter name="browser" value="firefox" />
+
+		<classes>
+			<class name="seleniumgrid.TestAutomationGrid">
+				<methods>
+					<include name="flipkart" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

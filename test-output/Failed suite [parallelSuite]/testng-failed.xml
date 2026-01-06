@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="methods" name="Failed suite [Failed suite [parallelSuite]]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="methods" name="FlipkartTest(failed)(failed)">
+    <parameter name="browser" value="edge"/>
+    <parameter name="url" value="https://www.flipkart.com/"/>
+    <classes>
+      <class name="parallel.Flipkart">
+        <methods>
+          <include name="FlipkartloginTitle"/>
+          <include name="Flipkartlogin"/>
+          <include name="SetUp"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- parallel.Flipkart -->
+    </classes>
+  </test> <!-- FlipkartTest(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [parallelSuite]] -->
