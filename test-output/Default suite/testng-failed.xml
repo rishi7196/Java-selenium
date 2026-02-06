@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleniumgrid.TestAutomationGrid">
+      <class name="seleniumMethods.StaleElement">
         <methods>
-          <include name="flipkart"/>
-          <include name="getOnChromeTest"/>
-          <include name="setup"/>
-          <include name="flipkart1"/>
+          <include name="staleElement"/>
         </methods>
-      </class> <!-- seleniumgrid.TestAutomationGrid -->
+      </class> <!-- seleniumMethods.StaleElement -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
