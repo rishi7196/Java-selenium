@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleniumMethods.StaleElement">
+      <class name="crossBrowser.CrossBrowserTest">
         <methods>
-          <include name="staleElement"/>
+          <include name="launchCitiBank"/>
+          <include name="tearDown"/>
+          <include name="launchCitiBank1"/>
+          <include name="initialize"/>
         </methods>
-      </class> <!-- seleniumMethods.StaleElement -->
+      </class> <!-- crossBrowser.CrossBrowserTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="tests" name="Failed suite [CrossBrowserSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="4" parallel="tests" name="Edge Test(failed)">
+    <parameter name="browser" value="edge"/>
+    <parameter name="url" value="https://www.flipkart.com"/>
+    <classes>
+      <class name="parallel.Amazon">
+        <methods>
+          <include name="loginAmazon"/>
+          <include name="TearDown"/>
+          <include name="SetUp"/>
+          <include name="AmazonloginTitle"/>
+        </methods>
+      </class> <!-- parallel.Amazon -->
+    </classes>
+  </test> <!-- Edge Test(failed) -->
+</suite> <!-- Failed suite [CrossBrowserSuite] -->

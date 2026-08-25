@@ -45,6 +45,16 @@ public class CrossBrowserTest {
         // Using contains() to avoid exact title mismatch issues
         Assert.assertTrue(actualTitle.contains("Citi"), "Title does not match expected");
     }
+    
+    @Test
+    public void launchCitiBank1() {
+        driver.get("https://www.citi.com");
+        String actualTitle = driver.getTitle();
+        System.out.println("Page Title: " + actualTitle);
+        
+        // Using contains() to avoid exact title mismatch issues
+        Assert.assertTrue(actualTitle.contains("Citi"), "Title does not match expected");
+    }
 
     @AfterTest
     public void tearDown() {

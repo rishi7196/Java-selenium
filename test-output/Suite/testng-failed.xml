@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="2" parallel="tests" name="Chrome Test(failed)">
-    <parameter name="browser" value="chrome"/>
+<suite thread-count="2" parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="methods" name="Test(failed)">
+    <parameter name="URL" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
     <classes>
-      <class name="singleton.TestParrel">
+      <class name="Testng.Parameterized">
         <methods>
-          <include name="tearDown"/>
-          <include name="launchCitiBank"/>
-          <include name="setup"/>
+          <include name="openUrl" invocation-numbers="0"/>
         </methods>
-      </class> <!-- singleton.TestParrel -->
+      </class> <!-- Testng.Parameterized -->
     </classes>
-  </test> <!-- Chrome Test(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
